@@ -9,7 +9,9 @@ namespace Parent {
 		}
 	}
 }
+namespace All = Parent::Sub;
 
 int main() {
 	Parent::Sub::f();
+	All::f();
 }
