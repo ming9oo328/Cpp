@@ -5,6 +5,8 @@ void SwapByRef2(int& ref1, int& ref2) {
 	int temp = ref1;
 	ref1 = ref2;
 	ref2 = temp;
+	//참조자는 main에 직접 찾아가 수정, 메모리 적게 씀
+	//하지만 NULL불가, 반드시 초기화
 }
 
 int main() {
